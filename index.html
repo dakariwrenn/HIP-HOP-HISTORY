@@ -7,6 +7,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
+  <style>
+    .hero {
+      text-align: center;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Graffiti_wall_in_Stoke-on-Trent.jpg') center/cover no-repeat;
+      padding: 80px 20px;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .artist-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .artist img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+    }
+
+    .artist {
+      text-align: center;
+      max-width: 200px;
+    }
+
+    .divider {
+      width: 100%;
+      display: block;
+      margin: 30px auto;
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -34,15 +69,15 @@
         <p><strong>Tupac</strong> — A revolutionary poet with a mic. His truth still echoes.</p>
       </div>
       <div class="artist">
-        <img src="https://upload.wikimedia.org/wikipedia/en/7/7c/Ready_To_Die_album_cover.jpg" alt="Biggie Smalls">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/The_Notorious_B.I.G_1995.jpg" alt="Biggie Smalls">
         <p><strong>Biggie</strong> — Brooklyn's king of flow and storytelling.</p>
       </div>
       <div class="artist">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Lauryn_Hill_2014.jpg" alt="Lauryn Hill">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/LaurynHill2014.jpg" alt="Lauryn Hill">
         <p><strong>Lauryn Hill</strong> — Soul, truth, and unmatched elegance in rhyme.</p>
       </div>
       <div class="artist">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Kendrick_Lamar_in_2022.jpg" alt="Kendrick Lamar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Kendrick_Lamar_2022.jpg" alt="Kendrick Lamar">
         <p><strong>Kendrick</strong> — The voice of now. Fearless, sharp, essential.</p>
       </div>
     </div>
@@ -64,47 +99,29 @@
 
   <section id="timeline" class="timeline">
     <h2>Major Moments in Hip Hop</h2>
-
     <div class="event" onclick="toggleDetails(this)">
       <h3>1973: Birth of Hip Hop</h3>
-      <div class="details">
-        DJ Kool Herc throws a Bronx party and loops breakbeats — the night that changed music forever.
-      </div>
+      <div class="details">DJ Kool Herc throws a Bronx party and loops breakbeats — the night that changed music forever.</div>
     </div>
-
     <div class="event" onclick="toggleDetails(this)">
       <h3>1986: Rock Meets Rap</h3>
-      <div class="details">
-        Run-DMC and Aerosmith drop “Walk This Way” — breaking genre lines and taking hip hop global.
-      </div>
+      <div class="details">Run-DMC and Aerosmith drop “Walk This Way” — taking hip hop global.</div>
     </div>
-
     <div class="event" onclick="toggleDetails(this)">
       <h3>1990s: East vs West</h3>
-      <div class="details">
-        Biggie vs. Tupac, Death Row vs. Bad Boy — hip hop's most intense rivalry. Pain, pride, and poetry.
-      </div>
+      <div class="details">Biggie vs. Tupac, Death Row vs. Bad Boy — pride, poetry, and pain.</div>
     </div>
-
     <div class="event" onclick="toggleDetails(this)">
       <h3>2000s: South Rises</h3>
-      <div class="details">
-        ATL becomes the epicenter. Crunk, snap, trap — the South runs the charts.
-      </div>
+      <div class="details">ATL takes over — Outkast, T.I., Lil Jon, crunk, snap, trap.</div>
     </div>
-
     <div class="event" onclick="toggleDetails(this)">
       <h3>2010s: Conscious Meets Commercial</h3>
-      <div class="details">
-        Drake, Kendrick, J. Cole — redefining mainstream with introspection, samples, and skill.
-      </div>
+      <div class="details">Drake, Kendrick, Cole — melody, message, momentum.</div>
     </div>
-
     <div class="event" onclick="toggleDetails(this)">
-      <h3>2020s: TikTok, AI, and Influence</h3>
-      <div class="details">
-        TikTok births hits overnight. AI voices mimic legends. But the roots? Still strong.
-      </div>
+      <h3>2020s: TikTok & AI Influence</h3>
+      <div class="details">Socials break songs. AI mimics flows. But the streets still set the tone.</div>
     </div>
   </section>
 
@@ -112,7 +129,7 @@
 
   <section id="spotify">
     <h2>Latest Hip Hop Songs</h2>
-    <p>From playlists to parties — here's what the culture's feeling right now.</p>
+    <p>From playlists to parties — here's what the culture's vibing to right now.</p>
     <iframe style="border-radius:12px" 
       src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUsuxWHRQd?utm_source=generator" 
       width="100%" 
