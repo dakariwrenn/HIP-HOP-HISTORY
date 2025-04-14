@@ -1,4 +1,8 @@
 function toggleDetails(element) {
   const details = element.querySelector(".details");
-  details.style.display = details.style.display === "block" ? "none" : "block";
+  if (details.style.display === "block") {
+    details.style.display = "none";
+  } else {
+    details.style.display = "block";
+  }
 }
