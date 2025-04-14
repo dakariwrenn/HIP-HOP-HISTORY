@@ -2,9 +2,10 @@ body {
   margin: 0;
   font-family: 'Permanent Marker', cursive;
   background-color: #000;
-  color: #fff;
+  color: white;
   background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
   background-attachment: fixed;
+
 }
 
 nav {
